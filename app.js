@@ -5,7 +5,7 @@ const app = express();
 
 
 
-const PORT = 1337;
+const { PORT = 1337 } = process.env;
 
 app.use(morgan("dev"));
 app.use(express.static('public'))
